@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Drill 2</title>
+
+    <style>
+        body {
+            background-color: rgb(155, 163, 214);
+            font-family: monospace;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            background color: #303030; 
+            color: white; 
+            width: 580px; 
+            margin: 20px auto;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: #f0f0f0; 
+            width: 570px; 
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form { 
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .popcorn {
+            text-align: center;
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        #movie {
+            display: block;
+            width: 95%;
+            padding: 13px;
+            margin: 10px auto;
+            text-align: center;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+        }
+
+        .genres { 
+            margin-top: 20px;
+        }
+
+        .rating {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 60px;
+            padding: 10px;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+           width: 100%;
+           padding: 13px;
+           margin-top: 10px;
+           background-color: hsla(0, 95%, 17%, 0.799);
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+    
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Movie Rating</h1>
+
+        <p>Share your thoughts about the movie!</p>
+    </header>
+
+    <section>
+
+        <form>
+
+            <div class="popcorn">🍿</div>
+
+            <input
+                type="text"
+                id="movie"
+                name="movie"
+                placeholder="Avengers: Endgame"
+            >
+
+            <div class="genres">
+                
+                <b>Genres <i>(select all that apply)</i></b>
+
+                <br>
+
+                <input type="checkbox" id="action" name="genre" value="Action">
+                <label for="action">Action</label>
+
+                <input type="checkbox" id="comedy" name="genre" value="Comedy">
+                <label for="comedy">Comedy</label>
+
+                <input type="checkbox" id="drama" name="genre" value="Drama">
+                <label for="drama">Drama</label>
+
+                <input type="checkbox" id="fantasy" name="genre" value="Fantasy">
+                <label for="fantasy">Fantasy</label>
+
+                <input type="checkbox" id="scifi" name="genre" value="Scifi">
+                <label for="scifi">Sci-Fi</label>
+            </div>  
+            
+            <div class="rating">
+                <b>Rating</b>
+
+                <br>
+
+                <input type="radio" id="1star" name="rating" value="1">
+                <label for="1star">⭐</label>
+
+                <input type="radio" id="2star" name="rating" value="2">
+                <label for="2star">⭐⭐</label>
+
+                <input type="radio" id="3star" name="rating" value="3">
+                <label for="3star">⭐⭐⭐</label>
+
+                <input type="radio" id="4star" name="rating" value="4">
+                <label for="4star">⭐⭐⭐⭐</label>
+
+                <input type="radio" id="5star" name="rating" value="5">
+                <label for="5star">⭐⭐⭐⭐⭐</label>
+            </div>
+
+            <textarea
+                id="review"
+                name="review"
+                placeholder="Write your review here..."
+            ></textarea>
+
+            <input type="submit" value="Submit Review">
+
+            <p> 
+                Movie Review Tips:
+                <a href="link_here" target="_blank">Learn more</a>
+            </p>
+
+        </form>
+
+    </section>
+    
+</body>
+
+</html>
